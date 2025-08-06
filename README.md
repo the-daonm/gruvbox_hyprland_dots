@@ -6,7 +6,7 @@ A warm, cozy Gruvbox-themed desktop setup powered by **Hyprland**, with consiste
 
 ## 📸 Preview
 
-![Screenshot](./pic/swappy-20250806-154859.png)
+![Screenshot](./pic1.png)
 
 ---
 
