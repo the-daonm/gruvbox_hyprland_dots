@@ -51,8 +51,8 @@ unset_alt = { fg = "#a89984", bg = "#504945" }
 # : Status {{{
 
 [status]
-sep_left = { open = "\ue0be", close = "\ue0b8" }
-sep_right = { open = "\ue0be", close = "\ue0b8" }
+sep_left = { open = "\u2588", close = "\ue0b8" }
+sep_right = { open = "\ue0be", close = "\u2588" }
 overall = { }
 
 # Progress
