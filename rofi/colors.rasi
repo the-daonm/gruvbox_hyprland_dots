@@ -1,0 +1,11 @@
+* {
+    font:             "JetBrains Mono Nerd Font 12";
+    background:       #282828F2;
+    background-alt:   #1B1B1BF2;
+    foreground:       #EBDBB2F2;
+    blue:             #7DAEA3F2;
+    orange:           #D8A657F2;
+    green:            #A9B665F2;
+    red:              #EA6962F2;
+    aqua:             #89B482F2;
+}
