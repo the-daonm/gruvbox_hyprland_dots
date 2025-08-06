@@ -1,0 +1,122 @@
+[
+  {
+    //    General
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 0,
+    "margin-top": 5,
+    "margin-left": 55,
+    "margin-bottom": 0,
+    "margin-right": 55,
+    //    Left Modules
+    "modules-left": [
+      "clock",
+      "hyprland/workspaces"
+    ],
+    //    Center Modules
+    "modules-center": [],
+    //    Right Modules
+    "modules-right": [
+      // "wireplumber",
+      "bluetooth",
+      "network",
+      "cpu",
+      "memory",
+      "disk",
+      "battery"
+    ],
+    //    Left Configuration
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "disable-select-unfocused": true,
+      "all-outputs": true,
+      "warp-on-scroll": false,
+      "format": "{icon}",
+      "format-icons": {
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九",
+        "10": "十"
+      }
+    },
+    "clock": {
+      "format": " {:%a, %d/%m/%y  │  %I:%M %p} ",
+      "tooltip-format": "{:%B of %Y}",
+      "on-click": "gsimplecal"
+    },
+    //    Right Configuration
+    "bluetooth": {
+      "format": "󰂲",
+      "format-on": "",
+      "format-connected": " {num_connections}",
+      "tooltip-format": "{status}",
+      "tooltip-format-on": "{status}",
+      "tooltip-format-connected": "{device_alias}",
+      "on-click": "blueman-manager",
+      "on-click-right": "bash -c 'bluetoothctl show | grep -q \"Powered: yes\" && bluetoothctl power off || bluetoothctl power on'",
+      "interval": 1
+    },
+    "memory": {
+      "interval": 1,
+      "format": "{}% "
+    },
+    "cpu": {
+      "format": "{usage}% ",
+      "interval": 1
+    },
+    "disk": {
+      "interval": 1,
+      "format": "{percentage_used}% ",
+      "path": "/"
+    },
+    "battery": {
+      "interval": 1,
+      "states": {
+        "good": 90,
+        "warning": 15,
+        "critical": 5
+      },
+      "format": "{capacity} {icon}",
+      "format-full": "{capacity} {icon}",
+      "format-charging": "{capacity} ",
+      "format-plugged": "{capacity} ",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "network": {
+      "format-wifi": "",
+      "format-disconnected": "⚠",
+      "format-ethernet": "",
+      "tooltip-format": " {ifname} via {gwaddri}",
+      "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+      "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+      "tooltip-format-disconnected": "Disconnected",
+      "on-click": "kitty --class nmtui -e nmtui"
+    },
+    "wireplumber": {
+      "format": "{volume} {icon}",
+      "format-muted": "  ",
+      "format-icons": {
+        "default": [
+          " ",
+          " ",
+          " "
+        ]
+      },
+      "on-click-right": "pavucontrol",
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    }
+  }
+]
