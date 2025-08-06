@@ -1,0 +1,66 @@
+/* Gruvbox Dark Theme for Vimium */
+:root {
+  --bg: #282828;
+  --bg1: #3c3836;
+  --fg: #ebdbb2;
+  --fg-light: #fbf1c7;
+  --yellow: #fabd2f;
+  --orange: #fe8019;
+  --red: #fb4934;
+  --green: #b8bb26;
+  --blue: #83a598;
+  --aqua: #8ec07c;
+  --gray: #a89984;
+}
+
+/* Use JetBrainsMono Nerd Font (or fallback to monospace) */
+body, input, div {
+  font-family: "JetBrainsMono Nerd Font", monospace !important;
+  font-size: 14px !important;
+}
+
+/* Link Hints */
+div#vimiumHintMarkerContainer div.internalVimiumHintMarker {
+  background: var(--yellow) !important;
+  border: 1px solid var(--bg1);
+  color: var(--bg) !important;
+  font-weight: bold;
+}
+
+/* Vomnibar Styles */
+#vomnibar {
+  background: var(--bg) !important;
+  color: var(--fg) !important;
+}
+
+.vomnibarSearchArea {
+  background: var(--bg1) !important;
+  color: var(--fg-light) !important;
+  border: none !important;
+}
+
+.vomnibarSearchArea input {
+  background: var(--bg1) !important;
+  color: var(--fg-light) !important;
+  border: none !important;
+}
+
+.vomnibarSearchArea input:focus {
+  outline: none !important;
+}
+
+.vomnibarSuggestion {
+  background: var(--bg) !important;
+  color: var(--fg) !important;
+}
+
+.vomnibarSuggestionFocused {
+  background: var(--bg1) !important;
+  color: var(--fg-light) !important;
+}
+
+/* Remove blue border / box shadow when selecting link or input */
+* {
+  outline: none !important;
+  box-shadow: none !important;
+}
