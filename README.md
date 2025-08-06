@@ -25,6 +25,7 @@ A warm, cozy Gruvbox-themed desktop setup powered by **Hyprland**, with consiste
 | Network        | [nmtui](https://wiki.archlinux.org/title/NetworkManager#nmtui) | Text-based interface for NetworkManager                                                 |
 | Shell          | [Zsh](https://www.zsh.org/) + plugins           | Fast, extensible shell (see `.zshrc`)                                                   |
 | App Launcher   | [Rofi](https://github.com/davatorium/rofi)     | Gruvbox-themed launcher                                                                 |
+| File Manager    | [Yazi](https://github.com/sxyazi/yazi)         | Terminal-based file manager with Gruvbox theme (`yazi.toml`)                              |
 
 ---
 ## 📦 Installation
