@@ -34,7 +34,7 @@ A warm, cozy Gruvbox-themed desktop setup powered by **Hyprland**, with consiste
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/the-daonm/hyprdotfiles.git
+   git clone https://github.com/the-daonm/gruvbox_hyprland_dots.git
    cd hyprdotfiles
    ```
 
